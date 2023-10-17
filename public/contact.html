@@ -19,6 +19,12 @@
             text-decoration: none;
             color: #eee;
            }
+           nav{
+            animation: a1 1s ease-in-out  ;
+            animation-fill-mode:forwards;
+            transition-delay: 5s;
+            transform: rotateY(0%);
+           }
            nav a {
                     margin-right: 10px;
                 }
@@ -48,10 +54,30 @@
                 div p {
                  margin-bottom: 70px;
                 }
+                main{
+                    animation: a1 2s ease-in-out  ;
+            animation-fill-mode:forwards;
+            transition-delay: 5s;
+            transform: rotateY(0%);
+                }
                 main ul {
                  line-height: 40px;
                  margin-top: 50px;
                }
+               @keyframes a1 {
+            0%{
+                transform: translatey(-1000%);
+                opacity: 0;
+            }
+            50%{
+                transform: translatey(-10%);
+                opacity: 0;
+            }
+            100%{
+                transform: translatey(0%);
+                opacity: 1;
+            }
+        }
     </style>
     </head>
     <body >

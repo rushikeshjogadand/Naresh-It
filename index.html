@@ -21,6 +21,16 @@
             text-align: center;
             padding: 24px 0px 5px 0px;
             font-family: Arial, Helvetica, sans-serif;
+            animation: a1 2s ease-in-out  ;
+            animation-fill-mode:forwards;
+            transition-delay: 5s;
+            transform: rotateY(0%);
+        }
+        nav{
+            animation: a1 2.5s ease-in-out  ;
+            animation-fill-mode:forwards;
+            transition-delay: 5s;
+            transform: rotateY(0%);
         }
         a {
             text-decoration: none;
@@ -196,7 +206,21 @@
         }
 
         main {
-            margin: 40px 0px;
+           margin: 40px 0px;
+        }
+        @keyframes a1 {
+            0%{
+                transform: translatey(-1000%);
+                opacity: 0;
+            }
+            50%{
+                transform: translatey(-10%);
+                opacity: 0;
+            }
+            100%{
+                transform: translatey(0%);
+                opacity: 1;
+            }
         }
 
         .gr {
@@ -213,6 +237,10 @@
         .gr .ser1 {
             margin: 0px 10%;
             box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+            animation: a1 6s ease-in-out  ;
+            animation-fill-mode:forwards;
+            transition-delay: 4s;
+            transform: rotateY(0%);
         }
         footer ul{
             list-style: none;
