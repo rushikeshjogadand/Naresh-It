@@ -10,6 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap" rel="stylesheet">
     <title>Naresh </title>
     <style>
         header p {
@@ -25,6 +28,9 @@
         }
         nav a {
             margin-right: 10px;
+        }
+        nav a:hover{
+            color: aquamarine;
         }
         nav span {
             font-size: 16px;
@@ -103,6 +109,7 @@
             display: grid;
             grid-template-columns: 9fr 3fr;
             gap: 30px;
+            font-family: 'AR One Sans', sans-serif;
             height: 170px;
             margin: 80px 19px;
         }
@@ -117,6 +124,7 @@
         }
         .job1 {
             display: grid;
+            font-family: 'AR One Sans', sans-serif;
             grid-template-columns: 3fr 9fr;
             gap: 90px;
             height: 170px;
@@ -152,6 +160,7 @@
         }
         .student span {
             font-size: 35px;
+            color: #71cbff;
         }
         .d2 {
             height: 90vh;
@@ -202,8 +211,14 @@
         }
 
         .gr .ser1 {
-            margin: 0px 60px;
+            margin: 0px 10%;
             box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        }
+        footer ul{
+            list-style: none;
+        }
+        footer ul a:hover{
+            color: #f39c9c;
         }
 
         @media only screen and (max-width: 600px) {
@@ -211,23 +226,24 @@
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                height: 56vh;
+                height: 30%;
             }
 
             .ico {
-                width: 100%;
+                width:100%;
+                font-size: 14px;
             }
 
             .d5 {
                 width: 100%;
-                height: 400px;
+                height: 320px;
             }
 
             .d4 {
                 width: 100%;
             }
             footer ul {
-                line-height: 30px;
+                line-height:30px;
             }
             .d2 {
                 margin: 20px 0px;
@@ -246,7 +262,7 @@
                 grid-template-columns: 12fr;
             }
             .gr .ser1 {
-                margin: 0px 30px;
+                margin: 0px 20px;
             }
             .carousel-it img {
                 width: 98%;
@@ -331,10 +347,10 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="navbar-collapse collapse" id="menu">
-                        <span><span class="bi bi-house-door-fill"></span><a href="index.html"> Home</a></span>
-                        <span><span class="bi bi-info-circle-fill"></span><a href="public/about.html"> About</a></span>
-                        <span><span class="bi bi-info-square-fill"></span><a href="public/service.html"> Service</a></span>
-                        <span><span class="bi bi-phone"></span><a href="public/contact.html"> Contact us</a></span>
+                        <span><a href="index.html"><span class="bi bi-house-door-fill"></span>Home</a></span>
+                        <span><a href="public/about.html"><span class="bi bi-info-circle-fill"></span>About</a></span>
+                        <span><a href="public/service.html"><span class="bi bi-info-square-fill"></span>Service</a></span>
+                        <span><a href="public/contact.html"><span class="bi bi-phone"></span>Contact us</a></span>
                     </div>
                     <div class="dropdown ">
                         <button class="btn btn-secondary dropdown-toggle bg-dark me-5" type="button"
@@ -421,7 +437,7 @@
                 <div>
                     <span class="bi bi-1-circle ic text-warning"></span>
                     <span>Why do you want this job?</span><br>
-                    <span class="ms-4">The</span>hiring manager wantsto Learn about career your goals and how
+                    <span class="ms-4">The</span> hiring manager wantsto Learn about career your goals and how
                     this position fits into your plan. Make sure that you are sincerely intersted in the job and
                     will be motivated to perform if hired. Find out what you know about the company,position
                     (and if you took the time to research).
@@ -466,11 +482,11 @@
             </div>
         </section>
         <div class="m-auto d-flex justify-content-center">
-            <button class="btn btn-info me-5">Request call back</button>
-            <button class=" btn bg-success bg-gradient">FAQ'S</button>
+            <button class="btn btn-warning text-light-emphasis me-5"><b>Request call back</b></button>
+            <button class=" btn bg-success bg-gradient text-light"><b>FAQ'S</b></button>
         </div>
         <section class="mt-5 section3">
-            <div class="text-center pt-4"><b>Student Department Details</b></div>
+            <div class="text-center pt-4 h3"><b>Student Department Details</b></div>
             <div class="student">
                 <div>
                     <p><span class="bi bi-hourglass"></span></p>
@@ -500,63 +516,63 @@
             <p class="text-center pb-4 text-success">* Job A group of homogeneous tasks related by simillarity of
                 functions.</p>
         </section>
-    </main>
-    <main>
-        <div>
-            <h3 class="text-center mb-5"><b>Service</b></h3>
-            <div class="container-fluid gr">
-                <div class="ser1">
-                    <div> <img src="public/image/php.jpg" alt="" width="100%" height="170px"></div>
-                    <div class="mt-3 ms-3 text-primary">
-                        <p><b>WEB DESIGN !!</b></p>
+        <section>
+            <div>
+                <h3 class="text-center mb-5 h1"><b>Service</b></h3>
+                <div class="container-fluid gr">
+                    <div class="ser1">
+                        <div> <img src="public/image/php.jpg" alt="" width="100%" height="170px"></div>
+                        <div class="mt-3 ms-3 text-primary">
+                            <p><b>WEB DESIGN !!</b></p>
+                        </div>
+                        <div class="mt-4 ms-3 p-1">
+                            <p>Web design to the sesign of websites that are sisplayed on the internet. It usually refers to
+                                the user experience aspects of website development rather than software development</p>
+                        </div>
                     </div>
-                    <div class="mt-4 ms-3 p-1">
-                        <p>Web design to the sesign of websites that are sisplayed on the internet. It usually refers to
-                            the user experience aspects of website development rather than software development</p>
+                    <div class="ser1">
+                        <div> <img src="public/image/web.jpg" alt="" width="100%" height="170px"></div>
+                        <div class="mt-3 ms-3 text-primary">
+                            <p><b> IT SERVICES !!</b></p>
+                        </div>
+                        <div class="mt-4 ms-3 p-1">
+                            <p>We are ideally located in Larbert meaning we can offer IT support to businesses throughout
+                                Scotland. We take the hassie and worry out of your IT system by providing preventative and
+                                proactive IT support</p>
+                        </div>
                     </div>
-                </div>
-                <div class="ser1">
-                    <div> <img src="public/image/web.jpg" alt="" width="100%" height="170px"></div>
-                    <div class="mt-3 ms-3 text-primary">
-                        <p><b> IT SERVICES !!</b></p>
-                    </div>
-                    <div class="mt-4 ms-3 p-1">
-                        <p>We are ideally located in Larbert meaning we can offer IT support to businesses throughout
-                            Scotland. We take the hassie and worry out of your IT system by providing preventative and
-                            proactive IT support</p>
-                    </div>
-                </div>
-                <div class="ser1">
-                    <div> <img src="public/image/web.png" alt="" width="100%" height="170px"></div>
-                    <div class="mt-3 ms-3 text-primary">
-                        <p><b> WEB MARKETING !!</b></p>
-                    </div>
-                    <div class="mt-4 ms-3 p-1">
-                        <p>We are passionate about digital content cration, stategy and deliver results by designing
-                            marketing strategies which improve our clients brand visibility.</p>
+                    <div class="ser1">
+                        <div> <img src="public/image/web.png" alt="" width="100%" height="170px"></div>
+                        <div class="mt-3 ms-3 text-primary">
+                            <p><b> WEB MARKETING !!</b></p>
+                        </div>
+                        <div class="mt-4 ms-3 p-1">
+                            <p>We are passionate about digital content cration, stategy and deliver results by designing
+                                marketing strategies which improve our clients brand visibility.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <h4 align="center" class="p-3">Naresh Technologies</h4>
         <div class="a1 d-flex justify-content-between">
             <div class=" ico">
                 <ul>
-                    <li><span class="bi bi-facebook">Facebook</span></li>
-                    <li><span class="bi bi-envelope-fill"></span> Google</li>
-                    <li><span class="bi bi-twitter"></span> Twitter</li>
-                    <li><span class="bi bi-youtube"></span> Youtube</li>
+                    <li><a href="#"><span class="bi bi-facebook"> Facebook</span></a></li>
+                    <li><a href="#"><span class="bi bi-envelope-fill"></span> Google</a></li>
+                    <li><a href="#"><span class="bi bi-twitter"></span> Twitter</a></li>
+                    <li><a href="#"><span class="bi bi-youtube"></span> Youtube</a></li>
                 </ul>
             </div>
             <div class="d5 d-flex justify-content-between">
                 <div class="d4">
                     <ul>
-                        <li> Home</li>
-                        <li> About</li>
-                        <li> Service</li>
-                        <li> Contact</li>
+                        <li> <a href="index.html"><b>Home</b></a></li>
+                        <li> <a href="public/about.html"><b>About</b></a></li>
+                        <li> <a href="public/service.html"><b>Service</b></a></li>
+                        <li> <a href="public/contact.html"><b>Contact</b></a></li>
                     </ul>
                 </div>
                 <div class="d4">
