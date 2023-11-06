@@ -32,27 +32,59 @@
 .icon{
     font-size: 20px;
 }
+@media only screen and (max-width: 600px){
+    .m2{
+        height: 50vh;
+    }
+}
 </style>
 <script>
+     function change(){
+           var user= document.getElementById("txtName").value;
+           var names=document.getElementById("names");
+           var icon1=document.getElementById("icon1");
+            if(user==="Rushi"){
+                names.innerHTML="";
+                icon1.style.color="green";
+            }
+            else{
+                names.innerHTML="Invalid User Name".fontcolor('red');
+            }
+            
+        }
+
+        function passchange(){
+            var pass= document.getElementById("txtPass").value;
+           var passm=document.getElementById("passs");
+           var icon2=document.getElementById("icon2");
+            if(pass==="Rushi@123"){
+                passm.innerHTML="";
+                icon2.style.color="green";
+            }
+            else{
+                passm.innerHTML="Invalid User Name".fontcolor('red');
+            }
+            
+        }
     function verifypass(){
         var user=document.getElementById("txtName").value;
         var pass=document.getElementById("txtPass").value;
-        var names=document.getElementById("names");
-        var passm=document.getElementById("passs");
-
         if(user==="Rushi"){
+            
             if(pass==="Rushi@123"){
-
               document.location.assign('public/index1.html')
+              icon1.style.color="green"
+            
             }
             else{
                 passm.innerHTML="Invalid Password".fontcolor('red');
             }
         }
         else{
-            names.innerHTML="Invalid User Name".fontcolor('red');
+           
             return;
         }
+        
     }
 </script>
 </head>
@@ -64,15 +96,15 @@
       
         <div class="m2">
             <div class="user">
-                <span class="bi bi-person-fill me-2 icon"></span>
+                <span class="bi bi-person-fill me-2 icon" id="icon1"></span>
                 <b><span> User name</span></b>
-                <input type="text" id="txtName" required  maxlength="10" class="form-control mt-2">
+                <input type="text" id="txtName" required  onkeyup="change()" maxlength="10" class="form-control mt-2">
                 <span id="names"></span>
             </div>
             <div class="mt-4">
-                 <span class="bi bi-lock-fill me-2 icon"></span>
+                 <span class="bi bi-lock-fill me-2 icon" id="icon2"></span>
                <b> <span> Password</span></b>
-                <input type="password" id="txtPass" required maxlength="10" class="form-control mt-2" size="30">
+                <input type="password" onkeyup="passchange()" id="txtPass" required maxlength="10" class="form-control mt-2" size="30">
                 <span id="passs"></span>
             </div>
             <div align="center" class="mt-4">
